@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*CONTAINER*/
+.container{
+    width: 100%;
+    display: flex;
+}
+
+/*F.CONTAINER*/
+.header__inner{
+    padding: 50px 0;
+}
+.simon__game, #pc__number{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.simon__game{
+    font-size: 30px;
+}
+
+#pc__number{
+    font-size: 50px;
+    color: blueviolet;
+}
