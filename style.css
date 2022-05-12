@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 /*CONTAINER*/
-.container{
-    width: 100%;
-    display: flex;
-}
 
 /*F.CONTAINER*/
 .header__inner{
@@ -27,3 +23,27 @@
     font-size: 50px;
     color: blueviolet;
 }
+
+
+.correct, .how__numbers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+#user__number{
+    font-size: 50px;
+    color: red;
+}
+#correct__text{
+    margin-right: 20px;
+    font-size: 30px;
+}
+#numbers__text{
+    margin-right: 20px;
+    font-size: 25px;
+    color: rgb(0, 162, 255);
+}
+
+
