@@ -1,6 +1,7 @@
 const pc__number = document.getElementById("pc__number")
 const user__number = document.getElementById("user__number")
 const numbers__guessed = document.getElementById("numbers__guessed")
+const timer = 3;
 
 var pc__numbers = [];
 var user__numbers = [];
@@ -18,10 +19,12 @@ while (pc__numbers.length <= 4 ) {
 
 pc__number.innerHTML = pc__numbers;
 
+setTimeout(function(){
+  document.getElementById("pc__number").style.display = "none";
+},(timer - 1) * 1000);
 
-setTimeout(Timingout, 30000);
+setTimeout(Timingout, timer * 1000);
 function Timingout () {
-    document.getElementById("pc__number").style.display = "none";
     while(user__numbers.length <= 4){
         user__numbers.push(Number(prompt("Inserisci il numero")));
         if(user__numbers[i] == pc__numbers[i]){
